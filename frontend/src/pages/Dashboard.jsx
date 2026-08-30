@@ -14,7 +14,7 @@ const Dashboard = () => {
   const fetchContent = async (token) => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/content",
+        " https://nexora-ucvu.onrender.com/api/content",
         {
           headers: {
             Authorization: `Bearer ${token}`,
