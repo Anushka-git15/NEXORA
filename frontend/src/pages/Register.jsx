@@ -56,7 +56,7 @@ const Register = () => {
     onSubmit: async (values, { setSubmitting }) => {
       try {
         const response = await axios.post(
-          "http://localhost:5000/api/auth/register",
+          "https://nexora-ucvu.onrender.com/api/auth/register",
           {
             name: values.name.trim(),
             email: values.email.trim(),
