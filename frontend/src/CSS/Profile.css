@@ -1,0 +1,145 @@
+.profile-page {
+  min-height: 100vh;
+  background: #0b1020;
+  color: #f8fafc;
+  padding: 40px;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.profile-header {
+  margin-bottom: 30px;
+}
+
+.back-button {
+  border: 1px solid #273449;
+  background: #111827;
+  color: #cbd5e1;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.back-button:hover {
+  background: #1e293b;
+}
+
+.profile-header p {
+  color: #a78bfa;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 34px;
+}
+
+.profile-header span {
+  display: block;
+  margin-top: 8px;
+  color: #64748b;
+}
+
+.profile-card,
+.details-card {
+  background: #111827;
+  border: 1px solid #1f2937;
+  border-radius: 18px;
+  padding: 30px;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 85px;
+  height: 85px;
+  border-radius: 22px;
+  background: #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.profile-info h2 {
+  margin: 0 0 7px;
+  font-size: 25px;
+}
+
+.profile-info p {
+  margin: 0 0 15px;
+  color: #94a3b8;
+}
+
+.account-badge {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 20px;
+  background: #172554;
+  color: #93c5fd;
+  font-size: 12px;
+}
+
+.details-card h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.detail-item {
+  padding: 18px;
+  border: 1px solid #1f2937;
+  border-radius: 12px;
+  background: #0f172a;
+}
+
+.detail-item span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.detail-item strong {
+  font-size: 14px;
+}
+
+.profile-loading {
+  min-height: 100vh;
+  background: #0b1020;
+  color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 650px) {
+  .profile-page {
+    padding: 20px;
+  }
+
+  .profile-card {
+    align-items: flex-start;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
