@@ -15,7 +15,7 @@ const Profile = () => {
         const token = localStorage.getItem("token");
 
         const response = await axios.get(
-          "http://localhost:5000/api/auth/me",
+          "https://nexora-ucvu.onrender.com/api/auth/me",
           {
             headers: {
               Authorization: `Bearer ${token}`,
