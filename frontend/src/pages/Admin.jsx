@@ -53,7 +53,7 @@ const Admin = () => {
   const fetchContent = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/content",
+        "https://nexora-ucvu.onrender.com/api/content",
         config
       );
 
@@ -97,7 +97,7 @@ const Admin = () => {
         };
 
         await axios.post(
-          "http://localhost:5000/api/admin/content",
+          "https://nexora-ucvu.onrender.com/api/admin/content",
           newContent,
           config
         );
@@ -183,7 +183,7 @@ const Admin = () => {
 
       try {
         const response = await axios.put(
-          `http://localhost:5000/api/admin/content/${editingId}`,
+          ` https://nexora-ucvu.onrender.com/api/admin/content/${editingId}`,
           newValues,
           config
         );
@@ -258,7 +258,7 @@ const Admin = () => {
       setDeletingId(id);
 
       await axios.delete(
-        `http://localhost:5000/api/admin/content/${id}`,
+        ` https://nexora-ucvu.onrender.com/api/admin/content/${id}`,
         config
       );
 
