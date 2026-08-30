@@ -30,7 +30,7 @@ const Login = () => {
         console.log("SENDING:", values);
 
         const response = await axios.post(
-          "http://localhost:5000/api/auth/login",
+          "https://nexora-ucvu.onrender.com/api/auth/login",
           {
             email: values.email.trim(),
             password: values.password,
