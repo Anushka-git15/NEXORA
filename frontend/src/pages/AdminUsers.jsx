@@ -46,7 +46,7 @@ const AdminUsers = () => {
   const fetchUsers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/admin/users",
+        " https://nexora-ucvu.onrender.com/api/admin/users",
         config
       );
 
@@ -86,7 +86,7 @@ const AdminUsers = () => {
       setDeletingId(userId);
 
       await axios.delete(
-        `http://localhost:5000/api/admin/users/${userId}`,
+        ` https://nexora-ucvu.onrender.com/api/admin/users/${userId}`,
         config
       );
 
@@ -175,7 +175,7 @@ const AdminUsers = () => {
 
       try {
         const response = await axios.put(
-          `http://localhost:5000/api/admin/users/${editingId}`,
+          ` https://nexora-ucvu.onrender.com/api/admin/users/${editingId}`,
           newValues,
           config
         );
